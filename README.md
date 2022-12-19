@@ -1,6 +1,6 @@
 # UI Components
 
-library for ui components built using react and typescript, contains 14 ui components and 60 unit tests that cover 100% of the components.
+library for ui components built using react and typescript, contains 14 ui components and 60 unit tests.
 
 ## Available Scripts
 
