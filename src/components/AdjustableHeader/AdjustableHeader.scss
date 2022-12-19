@@ -1,0 +1,49 @@
+@import '../../utils/style.scss';
+
+.ui-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100px;
+  padding: 0 6rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  transition: height 0.3s, background-color 0.3s, backdrop-filter 0.3s;
+  .logo {
+    margin-right: 50px;
+    color: #fff;
+    font-weight: 700;
+    font-family: $DefaultFonts;
+  }
+  .ui-button {
+    .ui-tooltip {
+      button {
+        color: #fff;
+        &:hover {
+          background-color: transparent;
+          box-shadow: 0 0 0 1.5px rgba(255, 255, 255, 0.8);
+        }
+      }
+    }
+  }
+}
+
+@keyframes blur-in {
+  from {
+    backdrop-filter: blur(0px);
+  }
+  to {
+    backdrop-filter: blur(16px);
+  }
+}
+
+@keyframes blur-out {
+  from {
+    backdrop-filter: blur(16px);
+  }
+  to {
+    backdrop-filter: blur(0px);
+  }
+}

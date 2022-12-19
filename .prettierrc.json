@@ -1,0 +1,16 @@
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "requirePragma": false,
+  "insertPragma": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": true,
+  "printWidth": 80,
+  "quoteProps": "consistent",
+  "semi": true,
+  "semicolon": [true, "never", "ignore-interfaces"],
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "all"
+}

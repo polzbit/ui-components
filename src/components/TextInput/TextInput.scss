@@ -1,0 +1,30 @@
+@import '../../utils/style.scss';
+
+.ui-text-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  input {
+    outline: none;
+    border: none;
+    border-bottom: 1.5px solid #000;
+    transition: border-bottom-width 0.5s, border-bottom-color 0.5s;
+    padding: 4px;
+    &:focus {
+      border-bottom-width: 2px;
+      border-bottom-color: $PrimaryColor;
+    }
+  }
+  .error-text {
+    color: $ErrorColor;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+}
+.input-error {
+  input {
+    border-bottom-color: $ErrorColor;
+  }
+}

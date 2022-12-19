@@ -1,0 +1,33 @@
+@import '../../utils/style.scss';
+
+.button-selected {
+  .button-text {
+    .ui-tooltip {
+      button {
+        background-color: rgba($PrimaryHoverColor, 0.3);
+        color: #fff;
+      }
+    }
+  }
+}
+
+.button-selected {
+  .button-fill {
+    .ui-tooltip {
+      button {
+        background-color: $PrimaryHoverColor;
+      }
+    }
+  }
+}
+
+.button-selected {
+  .button-outline {
+    .ui-tooltip {
+      button {
+        background-color: $PrimaryHoverColor;
+        color: #fff;
+      }
+    }
+  }
+}

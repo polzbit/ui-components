@@ -1,0 +1,59 @@
+@import '../../utils/style.scss';
+
+.ui-dialog {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .app-mask {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 2001;
+    cursor: pointer;
+  }
+  .dialog-content {
+    min-height: 150px;
+    min-width: 150px;
+    background-color: #fff;
+    z-index: 2002;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 11px 15px -7px,
+      rgba(0, 0, 0, 0.14) 0px 24px 38px 3px,
+      rgba(0, 0, 0, 0.12) 0px 9px 46px 8px;
+    padding: 15px;
+    border-radius: 4px;
+    .top-row {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 15px;
+      text-transform: capitalize;
+      position: relative;
+      span {
+        margin-top: 5px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .dialog-close-button {
+        position: absolute;
+        right: -15px;
+        top: -15px;
+        width: 30px;
+        height: 30px;
+        button {
+          border: none;
+          border-radius: 50%;
+          color: #000;
+        }
+      }
+    }
+  }
+}

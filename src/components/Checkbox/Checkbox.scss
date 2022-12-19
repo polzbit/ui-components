@@ -1,0 +1,34 @@
+@import '../../utils/style.scss';
+
+.ui-checkbox {
+  display: flex;
+  border-radius: 16px;
+  cursor: pointer;
+  .check-icon {
+    color: $PrimaryColor;
+  }
+  span {
+    padding: 7.5px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+}
+
+.checkbox-checked {
+  span {
+    color: $PrimaryColor;
+  }
+}
+.checkbox-top,
+.checkbox-bottom {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.checkbox-left,
+.checkbox-right {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}

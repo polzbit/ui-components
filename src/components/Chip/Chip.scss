@@ -1,0 +1,44 @@
+@import '../../utils/style.scss';
+
+.ui-chip {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 16px;
+  width: fit-content;
+  span {
+    padding: 7.5px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  svg {
+    margin: 0 10px;
+  }
+  .chip-delete-button {
+    height: 30px;
+    width: 30px;
+    .ui-tooltip {
+      button {
+        padding: 0;
+        color: rgb(141, 141, 141);
+        svg {
+          margin: 0;
+        }
+        &:hover {
+          background-color: transparent;
+          color: $PrimaryColor;
+        }
+      }
+    }
+  }
+}
+.chip-fill {
+  background-color: rgba(0, 0, 0, 0.08);
+  color: rgb(141, 141, 141);
+}
+
+.chip-outline {
+  border: 1px solid rgb(141, 141, 141);
+  color: rgb(141, 141, 141);
+}
